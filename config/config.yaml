@@ -1,0 +1,17 @@
+map: "~/ros2_ws/src/my_project/resources/opk-map.png"
+
+obstacles:
+  - type: circle
+    x: 1.0
+    y: 2.0
+    radius: 0.5
+
+  - type: rectangle
+    x: 3.0
+    y: 4.0
+    width: 1.0
+    height: 2.0
+
+station:
+  x: 8.0
+  y: 8.0
