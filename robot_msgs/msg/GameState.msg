@@ -1,0 +1,11 @@
+int32 score
+int32 wave
+int32 paper_count
+int32 plastic_count
+int32 glass_count
+int32 current_capacity
+int32 max_capacity
+float64 distance_traveled
+bool game_over
+string result_message
+robot_msgs/TrashItem[] trash_items
