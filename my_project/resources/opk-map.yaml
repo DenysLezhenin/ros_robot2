@@ -1,0 +1,26 @@
+# Map Configuration
+
+map: "/home/ros/ros2_ws/src/my_project/resources/opk-map.png"
+resolution: 0.05
+
+obstacles:
+  - type: "circle"
+    x: 30.0
+    y: 30.0
+    radius: 5.0
+  
+  - type: "circle"
+    x: 70.0
+    y: 70.0
+    radius: 4.0
+  
+  - type: "rectangle"
+    x: 20.0
+    y: 60.0
+    width: 10.0
+    height: 15.0
+
+station:
+  x: 50.0
+  y: 50.0
+  radius: 2.0

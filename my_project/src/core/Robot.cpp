@@ -1,5 +1,4 @@
-#include "robot/Robot.h"
-
+#include "my_project/core/Robot.hpp"
 
 namespace robot {
 
@@ -16,11 +15,15 @@ Robot::Robot(const Config& config, const CollisionCb& collision_cb){
     collision_cb_ = collision_cb;
 }
 
-Robot::~Robot(){
+void Robot::stopThread(){
     running_ = false;
     if(thread_.joinable()){
         thread_.join();
     }
+}
+
+Robot::~Robot(){
+    stopThread();
 }
 
 void Robot::run_thread(){
